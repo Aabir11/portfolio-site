@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aabirou Farooq • Portfolio</title>
+  <meta name="description" content="Full-stack developer portfolio – SQL • MongoDB • HTML • CSS • JavaScript • C++">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Aabirou Farooq • Portfolio_files/css2" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --text: #111827;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #9333ea;
+      --shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    [data-theme="dark"] {
+      --bg: #0f172a;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --card: #1e293b;
+      --shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { color: var(--accent); }
+
+    .container { max-width: 1100px; margin: auto; padding: 20px; }
+    header { position: sticky; top: 0; background: var(--bg); box-shadow: var(--shadow); z-index: 100; }
+    .nav { display: flex; justify-content: space-between; align-items: center; }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .logo {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff; font-weight: 800; font-size: 20px; padding: 10px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
+    nav a { margin-left: 20px; font-weight: 500; }
+    .theme { border: none; background: none; font-size: 18px; cursor: pointer; }
+
+    .hero { text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 20px; line-height: 1.2; }
+    .pill { display:inline-block; background: var(--card); box-shadow: var(--shadow); padding:5px 12px; border-radius: 20px; margin-bottom: 20px; font-size:14px; }
+    .cta { margin-top: 20px; display:flex; gap: 15px; justify-content:center; flex-wrap: wrap; }
+    .btn { padding:10px 20px; border-radius: 8px; border:none; cursor:pointer; font-weight:600; background:var(--card); box-shadow: var(--shadow); }
+    .btn.primary { background: var(--primary); color: #fff; }
+    .btn.primary:hover { background: var(--primary-dark); }
+
+    .card { background: var(--card); padding: 25px; border-radius: 16px; box-shadow: var(--shadow); margin-bottom: 25px; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-3px); }
+
+    h2 { font-size: 1.6rem; margin-bottom: 10px; }
+    p { margin-bottom: 10px; }
+    .muted { color: var(--muted); }
+
+    .grid { display: grid; gap: 20px; }
+    .grid.two { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+    .skills { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .skills div { padding:15px; border-radius:12px; background:var(--bg); box-shadow: var(--shadow); }
+
+    footer { text-align: center; padding: 30px; margin-top: 40px; font-size: 14px; color: var(--muted); }
+
+    @media(max-width: 600px){
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">AF</div>
+        <div>
+          <strong>Aabirou Farooq</strong><br>
+          <span class="muted" style="font-size:12px">Full Stack Developer • Open to Freelance</span>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="http://127.0.0.1:5500/#about">About</a>
+        <a href="http://127.0.0.1:5500/#skills">Skills</a>
+        <a href="http://127.0.0.1:5500/#projects">Projects</a>
+        <a href="http://127.0.0.1:5500/#services">Services</a>
+        <a href="http://127.0.0.1:5500/#certificates">Certificates</a>
+        <a href="http://127.0.0.1:5500/#contact">Contact</a>
+        <button class="theme" id="themeBtn" aria-label="Toggle theme" fdprocessedid="ae0mrq">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div>
+        <span class="pill">Available for Freelance • Remote / India</span>
+        <h1>Building clean, data-driven apps<br>with <span style="background:linear-gradient(135deg,var(--primary),var(--accent)); -webkit-background-clip:text; color:transparent">SQL, MongoDB &amp; JS</span></h1>
+        <p class="muted">I design and ship fast, modern web apps and dashboards. Strong with relational schemas, query optimization, and full-stack fundamentals.</p>
+        <div class="cta">
+          <a class="btn primary" href="http://127.0.0.1:5500/#projects">See Projects</a>
+          <a class="btn" href="http://127.0.0.1:5500/#contact">Hire Me</a>
+          <a class="btn" id="resumeBtn" href="http://127.0.0.1:5500/assets/resume.pdf" download="">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>Hey, I’m <strong>Aabirou</strong> — a developer focused on building reliable, database-driven products. I pair strong SQL fundamentals with JavaScript to deliver real business value: clean schemas, fast queries, and UIs that don’t fight you.</p>
+      <p class="muted">I’m currently open to freelance/remote roles. If you have a project in mind, let’s talk.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="card">
+      <h2>Skills &amp; Tools</h2>
+      <div class="grid skills" id="skillsGrid"><div><strong>HTML</strong><br><span class="muted">Advanced</span><p>Semantic, accessible, SEO-friendly</p></div><div><strong>CSS</strong><br><span class="muted">Advanced</span><p>Responsive, animations, components</p></div><div><strong>JavaScript</strong><br><span class="muted">Intermediate</span><p>APIs, state, patterns</p></div><div><strong>SQL (MySQL)</strong><br><span class="muted">Advanced</span><p>Schema design, joins, tuning</p></div><div><strong>MongoDB</strong><br><span class="muted">Intermediate</span><p>Aggregations, schema design</p></div><div><strong>C++</strong><br><span class="muted">Intermediate</span><p>DSA &amp; systems basics</p></div></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <p class="muted">Coming soon — I’ll be adding my best work here.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="card">
+      <h2>Services</h2>
+      <ul>
+        <li>Full-Stack Web Development</li>
+        <li>Database Design &amp; Optimization</li>
+        <li>Custom SQL/MongoDB Solutions</li>
+      </ul>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="card">
+      <h2>Certificates</h2>
+      <p>Infosys Certificate (will be added soon)</p>
+    </section>
+
+    <!-- CONTACT -->
+<section id="contact" class="card">
+  <h2>Contact</h2>
+  <p class="muted">Email is best. I typically reply within 24 hours.</p>
+  <ul>
+    <li>📧 <a id="emailLink" href="mailto:faabirou@gmail.com">faabirou@gmail.com</a></li>
+    <li>🔗 <a id="linkedinLink" href="https://www.linkedin.com/in/aabirou-farooq-2baab5345/" target="_blank">LinkedIn: Aabirou Farooq</a></li>
+  </ul>
+  <div class="cta">
+    <a href="https://www.linkedin.com/in/aabirou-farooq-2baab5345/" target="_blank" class="btn primary">Connect on LinkedIn</a>
+  </div>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    <div class="grid two">
+      <label> Name<br><input required="" name="name" style="width:100%" class="card" fdprocessedid="0xo9w"></label>
+      <label> Email<br><input required="" type="email" name="email" style="width:100%" class="card" fdprocessedid="db3cfl"></label>
+    </div>
+    <label> Message<br><textarea required="" name="message" rows="5" style="width:100%" class="card"></textarea></label>
+    <div class="cta" style="margin-top:10px">
+      <button class="btn primary" type="submit" fdprocessedid="0xj22p">Send Message</button>
+    </div>
+  </form>
+</section>
+</main>
+
+  <footer>
+    <div class="container">
+      Built by Aabirou Farooq • © <span id="yr">2025</span>
+    </div>
+  </footer>
+
+  <script>
+    const PROFILE = {
+      name: "Aabirou Farooq",
+      email: "faabirou@gmail.com",
+      resume: "assets/resume.pdf", // placeholder
+      linkedin: "https://www.linkedin.com/in/aabirou-farooq",
+      skills: [
+        { name:"HTML", level:"Advanced", blurb:"Semantic, accessible, SEO-friendly" },
+        { name:"CSS", level:"Advanced", blurb:"Responsive, animations, components" },
+        { name:"JavaScript", level:"Intermediate", blurb:"APIs, state, patterns" },
+        { name:"SQL (MySQL)", level:"Advanced", blurb:"Schema design, joins, tuning" },
+        { name:"MongoDB", level:"Intermediate", blurb:"Aggregations, schema design" },
+        { name:"C++", level:"Intermediate", blurb:"DSA & systems basics" }
+      ],
+      certs:["Infosys Certificate (will be added soon)"]
+    };
+
+    const skillsGrid = document.getElementById('skillsGrid');
+    PROFILE.skills.forEach(skill => {
+      let div = document.createElement('div');
+      div.innerHTML = `<strong>${skill.name}</strong><br><span class='muted'>${skill.level}</span><p>${skill.blurb}</p>`;
+      skillsGrid.appendChild(div);
+    });
+
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    document.getElementById('themeBtn').addEventListener('click', () => {
+      if(document.body.dataset.theme === 'dark'){
+        document.body.dataset.theme = '';
+      } else {
+        document.body.dataset.theme = 'dark';
+      }
+    });
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
